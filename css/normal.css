@@ -114,3 +114,31 @@ li a {
 .article:nth-child(2) {
     border-radius: 0;
 }
+
+    /* Accordion */
+#accordion {
+	padding: 0 0 0 0;
+	width: 100%;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+}
+
+#accordion div {
+	display: block;
+    background-color: #e0e0e0;
+    border: 1px solid #cccccc;
+    font-weight: bold;
+    margin: 1px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#accordion p {
+    background-color: #f9f9f9;
+	padding: 0 25px;
+    display: none;
+}
+
+#accordion p:last-child {
+    padding-bottom: 10px;
+}
