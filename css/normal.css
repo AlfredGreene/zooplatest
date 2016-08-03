@@ -152,3 +152,61 @@ li a {
 .footer li a:hover {
     color: #846988; 
 }
+/* Reseting the cols and Rows */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+    padding: 0 15px;
+}
+/* I added a couple of media queries to make it Responsive */
+@media only screen and (max-width: 425px) {
+    .navbar li a{
+        padding: 16px 10px;
+    }
+
+    .footer {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 959px) {
+    .footer {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    /* For minimum 960px width */
+    body {
+        max-width: 960px;
+    }
+    #accordion div {
+        padding: 41px;
+    }
+
+    .col-m-3 {width: 25%;}
+    .col-m-6 {width: 50%;}
+    .col-m-9 {width: 75%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 1100px) {
+   /* For minimum 1100px width */
+   body {
+        max-width: 1100px;
+   }
+
+   #accordion div {
+        padding: 7px;
+    }
+
+    .col-3 {width: 25%;}
+    .col-6 {width: 50%;}
+    .col-9 {width: 75%;}
+    .col-12 {width: 100%;}
+}
