@@ -142,3 +142,13 @@ li a {
 #accordion p:last-child {
     padding-bottom: 10px;
 }
+
+/* Footer */
+.footer {
+    background-color: #421a48;
+    font-size: 12px;
+}
+
+.footer li a:hover {
+    color: #846988; 
+}
