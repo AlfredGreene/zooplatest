@@ -5,3 +5,5 @@ $("#accordion > li > div").click(function(){
 	}
 	$(this).next().slideToggle(300);
 });
+
+$('#accordion > li > p:eq(0)').show();
